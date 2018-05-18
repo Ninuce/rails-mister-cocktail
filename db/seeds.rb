@@ -14,9 +14,9 @@ Ingredient.create(name: "vodka")
 Ingredient.create(name: "Sprite")
 
 
-Cocktail.create(name: "Mai tai")
-Cocktail.create(name: "Mojito")
-Cocktail.create(name: "ChiChi")
-Cocktail.create(name: "Susnet")
-Cocktail.create(name: "Long island")
+# Cocktail.create(name: "Mai tai")
+# Cocktail.create(name: "Mojito")
+# Cocktail.create(name: "ChiChi")
+# Cocktail.create(name: "Susnet")
+# Cocktail.create(name: "Long island")
 

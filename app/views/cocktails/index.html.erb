@@ -1,15 +1,20 @@
 <div class="container">
-  <h1>All cocktails</h1>
-  <ol>
-  <% @cocktails.each do |coc| %>
-    <li>
-        <%= link_to coc.name, cocktail_path(coc) %>
-    </li>
-   <% end %>
-  </ol>
+  <div class="title-cocktails-cont">
+    <h1 class="title--main">Our cocktails</h1>
+  </div>
 
 
- <%= link_to "new cocktail", new_cocktail_path %>
 
+  <div class="cards-cont">
+    <% @cocktails.each do |coc| %>
+      <%= link_to cocktail_path(coc) do %>
+        <div class="card-cocktail">
+          <p class="card-title"><%= coc.name %></p>
+          <div class="card-img" style="background-image: url('<%= coc.photo %>')">
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+  <%= link_to "new cocktail", new_cocktail_path, class: "cocktail-path" %>
 </div>
-

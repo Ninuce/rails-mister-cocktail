@@ -7,6 +7,12 @@
   <%= link_to "delete this dose", dose_path(dose), method: :delete %></p>
   <% end %>
 
+
+
+   <%= cl_image_tag @cocktail.photo, height: 300 %>
+
+
+
   <p><%= link_to "Back", cocktails_path, class: "btn btn-primary" %><p>
   <p><%= link_to "Add new dose", new_cocktail_dose_path(@cocktail), class: "btn btn-primary" %><p>
 
