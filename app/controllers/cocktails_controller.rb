@@ -35,34 +35,4 @@ class CocktailsController < ApplicationController
   def find_cocktail
     @cocktail = Cocktail.find(params[:id])
   end
-
-
-
-
-
-
-
-  # def create
-  #   @review = Review.new(review_params)
-  #   @cocktail = cocktail.find(params[:cocktail_id])
-  #   @review.cocktail = @cocktail
-  #   if @review.save
-  #     redirect_to cocktail_path(@cocktail)
-  #   else
-  #     render :new
-  #   end
-  # end
-
-
-
-
 end
-
-
-
-# GET "cocktails"
-
-# GET "cocktails/42"
-
-# GET "cocktails/new"
-# POST "cocktails"
